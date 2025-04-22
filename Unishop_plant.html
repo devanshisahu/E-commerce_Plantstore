@@ -1,0 +1,377 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   University Plant Shop
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-green-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a class="text-2xl font-bold text-green-700 flex items-center space-x-2" href="#">
+      <i class="fas fa-seedling">
+      </i>
+      <span>
+       UniPlantShop
+      </span>
+     </a>
+     <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
+      <a class="hover:text-green-700 transition" href="#">
+       Home
+      </a>
+      <a class="hover:text-green-700 transition" href="#products">
+       Plants
+      </a>
+      <a class="hover:text-green-700 transition" href="#about">
+       About
+      </a>
+      <a class="hover:text-green-700 transition" href="#testimonials">
+       Testimonials
+      </a>
+      <a class="hover:text-green-700 transition" href="#contact">
+       Contact
+      </a>
+     </div>
+     <div class="hidden md:flex items-center space-x-4">
+      <button aria-label="Search" class="text-gray-600 hover:text-green-700 transition">
+       <i class="fas fa-search">
+       </i>
+      </button>
+      <button aria-label="User Account" class="text-gray-600 hover:text-green-700 transition">
+       <i class="fas fa-user">
+       </i>
+      </button>
+      <button aria-label="Shopping Cart" class="text-gray-600 hover:text-green-700 transition relative">
+       <i class="fas fa-shopping-cart">
+       </i>
+       <span class="absolute -top-2 -right-2 bg-red-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+        2
+       </span>
+      </button>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Open Menu" class="text-gray-700 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-700" id="mobile-menu-button">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-green-50" href="#">
+     Home
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-green-50" href="#products">
+     Plants
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-green-50" href="#about">
+     About
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-green-50" href="#testimonials">
+     Testimonials
+    </a>
+    <a class="block px-4 py-3 hover:bg-green-50" href="#contact">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-green-700 to-green-400 text-white">
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:space-x-12">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+      Bring Nature to Your Campus Life
+     </h1>
+     <p class="text-lg md:text-xl mb-8 max-w-md mx-auto md:mx-0">
+      Discover a wide variety of indoor and outdoor plants perfect for dorm rooms, apartments, and study spaces.
+     </p>
+     <a class="inline-block bg-white text-green-700 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-50 transition" href="#products">
+      Shop Plants
+     </a>
+    </div>
+    <div class="md:w-1/2 mt-10 md:mt-0">
+     <img alt="University students enjoying plants in their dorm room, with various green plants and pots around" class="rounded-lg shadow-lg mx-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c21f8a18-d03a-45c0-335f-fa3da9535c86.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Products Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="products">
+   <h2 class="text-3xl font-bold text-center text-green-900 mb-12">
+    Popular Plants
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Snake Plant in modern ceramic pot with tall green leaves and yellow edges" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/32a17174-c644-47ef-ea22-064f9e6f7cd0.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Snake Plant
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Easy to care for, perfect for improving indoor air quality.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-green-700 font-bold text-lg">
+        $25.00
+       </span>
+       <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Succulent arrangement in small pot with various green and purple succulents" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3a4a36a7-f736-43f7-de1b-39e243b9f656.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Succulent Mix
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Low maintenance and perfect for desks or windowsills.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-green-700 font-bold text-lg">
+        $18.00
+       </span>
+       <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Fiddle Leaf Fig tree with large green leaves in a decorative pot" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ee9b54c0-fd08-47e9-4e1b-a1225dd1efbc.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Fiddle Leaf Fig
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Stylish indoor tree that adds a tropical vibe to any room.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-green-700 font-bold text-lg">
+        $45.00
+       </span>
+       <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Peace Lily plant with glossy green leaves and white flowers in a white pot" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5137f026-c21e-4147-460e-74cd6eb4c0db.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Peace Lily
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Elegant flowering plant that thrives in low light.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-green-700 font-bold text-lg">
+        $30.00
+       </span>
+       <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Herb garden kit with basil and mint plants in small pots on a wooden tray" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/07cb75c2-fd32-4440-953b-928fcdf766e1.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Herb Garden Kit
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Grow fresh herbs right in your dorm or kitchen window.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-green-700 font-bold text-lg">
+        $35.00
+       </span>
+       <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Air plant inside a geometric glass terrarium with pebbles" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d1261fb0-b91f-40fb-599f-3d9dd48b1d0c.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Air Plant Terrarium
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Unique and easy-care plants that don’t require soil.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-green-700 font-bold text-lg">
+        $28.00
+       </span>
+       <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="bg-white py-16" id="about">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12">
+    <div class="md:w-1/2 mb-10 md:mb-0">
+     <img alt="University plant shop team helping students choose plants in a bright, green-filled store" class="rounded-lg shadow-lg mx-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/57404ed8-7d78-42c0-0750-2b96be140592.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2">
+     <h2 class="text-3xl font-bold mb-6 text-green-900">
+      About UniPlantShop
+     </h2>
+     <p class="text-gray-700 mb-4 leading-relaxed">
+      UniPlantShop is your campus destination for all things green. We provide a curated selection of plants and gardening kits perfect for university students looking to brighten their living and study spaces.
+     </p>
+     <p class="text-gray-700 leading-relaxed">
+      Our mission is to promote wellness and sustainability by making it easy and affordable to bring nature indoors.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="bg-green-100 py-16" id="testimonials">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-green-900 mb-12">
+     What Our Students Say
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <blockquote class="bg-white p-6 rounded-lg shadow-md">
+      <p class="text-gray-800 italic mb-4">
+       "The plants I bought from UniPlantShop have made my dorm room feel so much more alive and cozy. The staff was super helpful!"
+      </p>
+      <div class="flex items-center space-x-4">
+       <img alt="Portrait of a smiling female university student with curly hair and glasses" class="w-16 h-16 rounded-full object-cover" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/06b8a430-e337-46aa-edc2-f648e0897fdc.jpg" width="64"/>
+       <div>
+        <p class="font-semibold text-green-700">
+         Emily R.
+        </p>
+        <p class="text-gray-600 text-sm">
+         Biology Major
+        </p>
+       </div>
+      </div>
+     </blockquote>
+     <blockquote class="bg-white p-6 rounded-lg shadow-md">
+      <p class="text-gray-800 italic mb-4">
+       "I love the herb garden kit! It’s so easy to grow fresh herbs even in my small apartment."
+      </p>
+      <div class="flex items-center space-x-4">
+       <img alt="Portrait of a smiling male university student with short hair and casual clothes" class="w-16 h-16 rounded-full object-cover" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0a0e0111-df11-4d95-e9a6-55d2a121891f.jpg" width="64"/>
+       <div>
+        <p class="font-semibold text-green-700">
+         Jason M.
+        </p>
+        <p class="text-gray-600 text-sm">
+         Environmental Science
+        </p>
+       </div>
+      </div>
+     </blockquote>
+     <blockquote class="bg-white p-6 rounded-lg shadow-md">
+      <p class="text-gray-800 italic mb-4">
+       "The air plant terrarium is a beautiful addition to my study desk and requires almost no care!"
+      </p>
+      <div class="flex items-center space-x-4">
+       <img alt="Portrait of a smiling female university student with long straight hair and a denim jacket" class="w-16 h-16 rounded-full object-cover" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ade66cad-a75a-4a90-f4bd-866cb5faa2ed.jpg" width="64"/>
+       <div>
+        <p class="font-semibold text-green-700">
+         Sophia L.
+        </p>
+        <p class="text-gray-600 text-sm">
+         Architecture
+        </p>
+       </div>
+      </div>
+     </blockquote>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-white py-16" id="contact">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+     Get in Touch
+    </h2>
+    <form action="#" class="max-w-3xl mx-auto space-y-6" method="POST" onsubmit="alert('Thank you for contacting UniPlantShop! We will get back to you soon.'); return false;">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="bg-green-700 text-white font-semibold px-8 py-3 rounded-md hover:bg-green-800 transition" type="submit">
+       Send Message
+      </button>
+     </div>
+    </form>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-green-900 text-green-200 py-8 mt-16">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <p class="text-sm">
+     © 2024 UniPlantShop. All rights reserved.
+    </p>
+    <div class="flex space-x-6 text-lg">
+     <a aria-label="Facebook" class="hover:text-white" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-white" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-white" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-white" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+ </body>
+</html>
